@@ -1,0 +1,11 @@
+/*"font-size: 75%;" devuelve el tamaño de letra de un 75% del asignado, que en html es de 16px.*/
+/*font-family:" cambia el tamaño de la letra*/ 
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*"font size: inherit;" hereda el tamaño de fuente. Como main ni body tienen tamaño de fuente asignado, se hereda de html*/ 
+h1 {
+    font-size: inherit;
+}

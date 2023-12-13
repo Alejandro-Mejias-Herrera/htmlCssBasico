@@ -1,0 +1,39 @@
+/* list-style:none le quita los puntitos a la lista desordenada
+padding agrega un "espacio interno" a la caja*/
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0px;
+    background-color: aquamarine;
+}  
+
+/*display: inline-block muestra los objetos en una fila en vez de que sea en una columna*/
+.main-nav__item {
+    display:inline-block;
+}
+
+/* border-radius redondea las esquinas de los elementos*/
+.main-nav__item a {
+    color:white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color:red;
+}
+
+/*pseudoclases*/
+/* hover realiza cambios cuando el mouse está sobre el elemento*/
+.main-nav__item a:hover {
+    color:blue;
+}
+
+/* active realiza cambios cuando se da click al elemento*/
+.main-nav__item a:active {
+    color: black;
+}
+
+/*pseudoelementos*/
+/*after agrega contenidos después del elemento*/
+.main-nav__item a::after {
+    content: " | "
+}

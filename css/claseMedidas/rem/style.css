@@ -1,0 +1,19 @@
+/*Se debe hacer en todos los archivos de css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Se coloca el font-size de html en 62.5% para que se pueda usar el rem como el px. Sería 1rem=10px*/
+html {
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+main div {
+    font-size: 1.4rem;
+}

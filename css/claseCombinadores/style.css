@@ -1,0 +1,25 @@
+/*
+combinador hermano adyacente. Cambia al p que tiene un h2 inmediatamente antes.
+h2 + p {
+    color: purple;
+}
+*/
+
+/*
+combinador hermano general. Cambia al p que está en la misma linea que un h2
+h2 ~ p {
+    color: blue;
+}
+*/
+
+/* es para un hujo directo
+div > p {
+    color: red;
+}
+*/
+
+/*a todas las etiquetas p que están dentro de un div, aunque no sea de manera directa*/
+div p {
+    color: crimson;
+}
+

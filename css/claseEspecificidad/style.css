@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: serif;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+#page-title {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* No toma en cuenta el font-family de la clase porque el de id tiene mayor importancia. Para evitar esto, se puede mandar a llamar al id y a la clase*/
+.title {
+    font-size: 18px;
+    font-family:monospace;
+}
+
+.nav {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+/*"display: inline-block" permite mostrar de forma horizontal los elementos de una lista.*/
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav .blog {
+    background-color: blue;
+}

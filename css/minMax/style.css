@@ -1,0 +1,25 @@
+/*Es buena práctica comenzar con esto para eliminar el margin y padding que trae por defecto html*/
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Ese width y height hacen que ocupe el 100% de la pantalla*/
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: purple;
+}
+
+/*margin 0 auto hace que de manera vectical no quede margin (0) y que horizontal quede centrada (auto)*/
+/*min-width 320px deja como ancho mínimo 320px. Si la página es menor, aparece un scroll. max-width deja un máximo. Si se pasa de eso, ya no ocupará el 80% del main*/
+/*al no incluir un max-height hacemos que crezca hasta cubbrir todo el texto que aparezca, por largo que sea*/
+section {
+    width: 80%;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: red;
+    min-width: 320px;
+    max-width: 500px;
+}

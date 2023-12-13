@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--form es para crear un formulario. action es un atributo que permite almacenar la info en una base de datos. -->
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <!--placeholder permite colocar un ejemplo para que el formulario muestre qué se debería colocar ahí-->
+            <!--required hace obligatorio completar el campo html-->
+            <input type="text" id="nombre" placeholder="Alejandro" required/>
+        </label>
+        <label for="ninicio-platzi">
+            <span>¿Qué día comenzaste en Platzi?</span>
+            <input type="date" id="inicio-platzi" />
+        </label>
+        <label for="horario">
+            <span>¿En qué horario estudias?</span>
+            <input type="time" id="horario" />
+        </label>
+        <!--Esta forma puede ser mejor. No colocar el input dentro del label. De esta forma es necesario que tengan el mismo nombre (for e id)-->
+        <label for="nombre2">¿Cuál es tu nombre?</label>
+        <input type="text" id="nombre2" placeholder="Alejandro" required/>
+
+    </form>
+</body>
+</html>

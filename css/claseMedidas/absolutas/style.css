@@ -1,0 +1,11 @@
+/*medida relativa*/
+main {
+    background-color:red;
+    width: 100%;
+    height: 500px;
+}
+
+/*medida absoluta*/
+main p {
+    font-size: 18px;
+}

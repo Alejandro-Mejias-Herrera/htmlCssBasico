@@ -1,0 +1,107 @@
+/*
+property justify-content alinea elementos horizontalmente, valores:
+
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+Space-evenly: Distribuye uniformemente el espacio entre los items y su alrededor.
+
+property align-items alinea elementos verticalmente
+
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.
+
+property flex-direction define la dirección de los elementos en el contenedor. / Permite elegir la alineación de los elementos hijos sea en vertical (column) u horizontal (row). Viene por defecto.
+valores:
+
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba.
+property order para agregar un orden a elementos individuales
+
+property **flex-wrap ** especifica si los elementos “hijos” son obligados a permanecer en una misma línea o pueden fluir en varias líneas
+
+nowrap: Cada elemento se ajusta en una sola línea.
+wrap: los elementos se envuelven alrededor de líneas adicionales.
+wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa.
+property flex-flow es una combinación de flex-direction y flex-wrap. Acepta un valor de cada una separada por un espacio. Permite establecer filas y envolverlas.
+
+property align-content determina el espacio entre las líneas, mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando solo hay una línea align-content no tiene efecto.
+
+flex-start: Las líneas se posicionan en la parte superior del contenedor.
+flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+space-between: Las líneas se muestran con la misma distancia entre ellas.
+space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+stretch: Las líneas se estiran para ajustarse al contenedor.
+property align-self permite los mismos valores de align-items. Se usa para un elemento específico
+
+order permite ordenar un elemento puntual.
+
+flex-grow permite que los elementos crezcan hasta que llenen el contenedor.
+
+Nota que cuando estableces la dirección a una fila invertida o columna, el inicio y el final también se invierten.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/*display:flex permite agrupar a todos los hijos de un contenedor de una determinada forma (flex-direction). Por defecto, viene ordenado en una fila (row), pero se puede colocar en una columna (column); */
+/*flex-wrap:wrap permite que al achicar la pantalla los elementos pasen a la línea de abajo. */
+/*con justify-content se posiciona el contenido en el centro (center), derecha (flex-end), izquierda (flex-start), dejando una espacio entre ellos que sea igual al de cada lado (space-evenly) */
+.container {
+    border: 0.3rem solid black;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* (div.box$.box>p{box$})*6 permite hacer seis clases de manera rápida */
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color: burlywood;
+}
+
+.box4 {
+    background-color: cadetblue;
+}
+
+.box5 {
+    background-color: coral;
+}
+
+.box6 {
+    background-color: sienna;
+}
